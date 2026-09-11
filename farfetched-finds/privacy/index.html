@@ -39,39 +39,39 @@
         <p class="eyebrow">Privacy Policy</p>
         <h1>Your road-trip memories belong to you.</h1>
         <p class="lede">Farfetched Finds is designed to work without advertising, behavioral tracking, or a developer-operated account system.</p>
-        <p class="updated">Effective September 8, 2026 · Version 1.3</p>
+        <p class="updated">Effective September 11, 2026 · Version 1.6</p>
       </header>
 
       <section class="content-section" aria-labelledby="summary">
         <h2 id="summary">The short version</h2>
         <div class="callout">
-          <strong>Farfetched Finds does not save exact GPS coordinates, license-plate numbers, or vehicle photos.</strong> Gameplay data stays on your device unless you choose to back it up, share it through another app, or enable a private iCloud Family Party.
+          <strong>Farfetched Finds does not save exact GPS coordinates, license-plate numbers, or vehicle photos.</strong> Gameplay data is saved on your device and, when iCloud is available, automatically backed up to your private iCloud account. You can turn automatic backups off in More → Data &amp; recovery → iCloud Backup. Sharing through another app or a private iCloud Family Party remains optional.
         </div>
         <p>The app has no third-party advertising or analytics SDKs and does not sell personal information.</p>
+        <p>This revision clarifies saved locations for offline play, immediate scoring, achievement plates, and profile displays. The app no longer records background drive locations. Automatic private iCloud backups are separate from optional Family Party sharing.</p>
       </section>
 
       <section class="content-section" aria-labelledby="data-used">
         <h2 id="data-used">Information the app uses</h2>
         <h3>Gameplay and profile information</h3>
-        <p>The app saves the information you enter or select, including scout names, optional avatar emoji or colors, optional profile photos, trip names, plate jurisdictions and designs, vehicle details, find times, coarse place labels, scores, comments and reactions attached to finds, profile showcases, and archived trips. Road challenges also save their names, types, targets, participating scouts, creator, start time, trip association, and cancellation information. Challenge progress and results are calculated from saved finds. Family Drive records and pending-location status are described below.</p>
+        <p>The app saves the information you enter or select, including scout names, optional avatar emoji or colors, optional profile photos, trip names, plate jurisdictions and designs, vehicle details, find times, coarse place labels, scores, comments and reactions attached to finds, profile showcases (including the finds chosen for the five display plates), and archived trips.</p>
+        <p>Road challenges also save their names, types, targets, participating scouts, creator, start time, trip association, and cancellation information.</p>
+        <p>Challenge progress and results, earned achievement plates, and Active Trip highlights are calculated on the device from saved game data. Editing or deleting a find can change those results. Profile display selections and whether a profile tip has been dismissed are saved with the profile. Offline logging and legacy drive records are described below.</p>
 
         <h3>Location</h3>
-        <p>If you choose Automatic GPS, the app requests a one-time location while you log a find. It uses that location on the device to calculate distance, produce a coarse city or region label, and rank nearby plate shortcuts in Quick Log. The exact latitude and longitude are then discarded and are not written to the saved find or its backup. The saved find may include the coarse place or region, the location accuracy measurement, and the distance used for scoring.</p>
+        <p>If you choose Automatic GPS, the app requests a one-time location while you log a find. It uses that location on the device to calculate distance, produce a coarse city or region label, and rank nearby plate shortcuts in Quick Log. The exact latitude and longitude are then discarded and are not written to the saved find or its backup. The saved find may include the coarse place or region, the location accuracy measurement, the distance used for scoring, and the scoring model and its breakdown. Pre-launch scoring updates can recalculate finds from the saved distance and coarse destination region without reconstructing the original GPS coordinates.</p>
         <p>If you choose City / Region, the app uses the approximate center of the place you select from its bundled offline place catalog on the device to calculate distance and rank nearby plate shortcuts in Quick Log. It does not request the device’s GPS location for that find, and the exact center coordinates are not written to the saved find or its backup.</p>
 
         <h3>Photos</h3>
         <p>If you choose a scout profile photo, Apple’s photo picker gives the app access only to the image you select. The app downsizes that image and stores it as part of the scout profile. Taking or saving photos of vehicles or license plates is not part of the app.</p>
 
         <h3>iCloud status</h3>
-        <p>The app checks whether iCloud is available when you use Family Party synchronization. Apple handles your iCloud identity; Farfetched Finds does not create a separate username, password, or developer-operated customer account.</p>
-        <h3>Optional Family Drive</h3>
-        <p>Location recording starts only when you choose Start Drive on This Phone and grant location permission. During that drive, updates can continue while the phone is locked or the app is in the background, with iOS showing its background-location indicator. The app saves city/region checkpoints and their times, the drive’s start and end times, a randomly generated recording-device identifier, and the selected travelers. It records checkpoints no more often than once every 30 seconds. Exact device coordinates are processed on the device and discarded; they are not saved, backed up, or shared with the party.</p>
-        <p>End Drive, revoking location permission, or force-quitting the app stops recording. It also stops after two hours or if checkpoints cannot be saved. Reopening the app recovers previously saved checkpoints but does not restart recording; a new drive requires another explicit start. Ending recording does not delete its saved checkpoints.</p>
-        <p>On a device with Use parent’s location enabled, finds keep their original times and credited scouts without requesting that device’s location for the find. They count toward collections while their points remain pending. When devices reconnect to the same Family Party, their times are matched to the recorded city/region checkpoints. Uncertain matches stay pending until more matching data arrives or you confirm a location for a group or selected stretch. Manual confirmation is preserved during later synchronization.</p>
-        <p>These coarse drive records are included in exported backups and, if Family Party is enabled, shared with its invited participants. They can reveal the cities or regions your selected travelers visited and when, even though they do not contain an exact GPS route. Turning off Use parent’s location changes future logging on that device; it does not erase existing finds or drive records.</p>
+        <p>The app checks whether iCloud is available for automatic private backups and Family Party synchronization. Apple handles your iCloud identity; Farfetched Finds does not create a separate username, password, or developer-operated customer account.</p>
+        <h3>Offline logging and older drive records</h3>
+        <p>The app remembers a city/region label, a region identifier when available, and the time the place was selected or refreshed for offline logging. The saved place can come from a manual selection or the coarse location of a GPS-scored find. When upgrading an older save, the app can initialize it from the most recent find with a usable place. These saved location details contain no exact coordinates and may be included in game backups and Family Party snapshots. Incoming party data does not replace the logging location used on this device.</p>
+        <p>When reusing that place, the app reconstructs an approximate catalog center in memory to calculate points immediately. The saved place does not track movement; you can change it in Quick Log. New finds require a location. Playing and scoring do not require a Family Party connection. If Family Party is enabled, reconnecting sends the saved find and its awarded score; it does not calculate a new score from the device’s later location. Delivery status is separate from the score already awarded.</p>
+        <p>The parent-location recorder and automatic drive matching have been removed. The app no longer records background drive checkpoints or writes a drive journal. Older finds without locations require a manual city selection. Existing coarse drive records in older saves, backups, or party snapshots remain readable and may reveal cities/regions, times, and selected travelers. They are retained for history compatibility and do not assign new scores.</p>
 
-        <h3>Purchases</h3>
-        <p>Apple processes the optional Full Game purchase. The app uses StoreKit to load the localized price and verify Apple-signed purchase and entitlement information, including restores, refunds, revocations, and eligible Family Sharing access. Farfetched Finds does not receive your payment-card or banking details and does not operate a payment server. The Full Game entitlement is separate from game backups and Family Party records.</p>
       </section>
 
       <section class="content-section" aria-labelledby="use">
@@ -82,7 +82,7 @@
           <li>Save and restore app data on your device.</li>
           <li>Synchronize a Family Party when its owner explicitly enables iCloud sharing.</li>
           <li>Deliver optional notifications for new Family Party activity, such as a rare find, comment, or new scout.</li>
-          <li>Create a backup or sharing item only when you ask the app to do so.</li>
+          <li>Automatically back up progress to your private iCloud account while automatic backups are enabled, and create exported files or sharing items when you request them.</li>
         </ul>
         <p>The app does not use this information for advertising, cross-app tracking, credit decisions, or data brokerage.</p>
       </section>
@@ -90,15 +90,20 @@
       <section class="content-section" aria-labelledby="storage-sharing">
         <h2 id="storage-sharing">Storage and sharing</h2>
         <h3>On your device</h3>
-        <p>Gameplay data, including comments and reactions attached to finds, is stored in the app’s private Application Support area. The main gameplay save and its recovery copy use iOS Complete File Protection. A separate, small Family Drive checkpoint journal uses protection until the first device unlock after a restart so it can continue recording while the phone is subsequently locked. It contains coarse drive data, not exact coordinates. The app keeps a local recovery copy so it can restore the most recent valid save if the primary file becomes damaged.</p>
+        <p>Gameplay data, including comments and reactions attached to finds, is stored in the app’s private Application Support area. The main gameplay save and its recovery copy use iOS Complete File Protection. The app keeps a local recovery copy so it can restore the most recent valid save if the primary file becomes damaged.</p>
+
+        <h3>Automatic private iCloud backups</h3>
+        <p>Automatic backups are enabled by default when iCloud is available, independently of Family Party and the Full Game purchase. They contain your saved game data, including scout profiles and selected profile photos, finds, comments and reactions, trips, challenges, settings, and any retained legacy drive records. They exclude exact coordinates and purchase entitlements. Backup metadata includes a random installation identifier, device type, creation time, find and scout counts, and checksums. Apple stores these records in your private CloudKit database using your iCloud storage allowance; they are not shared with Family Party participants.</p>
+        <p>A fresh installation checks for existing backups before uploading new progress. If progress already exists on the device, recovery requires your choice. Restoring a cloud copy disconnects Family Party on this device without deleting or changing the family's shared records. A manual cloud restore also keeps an exportable local copy of the progress it replaces. Backups do not provide live synchronization between independent installations.</p>
+        <p>If iCloud storage is full or connectivity is unavailable, the app keeps local progress and retries backups later. Only successfully uploaded progress is protected against a device erase. The More tab shows backup status and the last successful backup.</p>
 
         <h3>iCloud Family Party</h3>
-        <p>Family Party sharing is optional. When the owner enables it, the party’s scouts, profile information, finds, trips, settings, and featured profile finds are stored as an encrypted CloudKit asset in the owner’s private iCloud database and shared only with people the owner invites through Apple’s CloudKit sharing interface. Invited participants can view and update the shared party according to the permissions the owner grants.</p>
+        <p>Family Party sharing is optional. When the owner enables it, the party’s scouts, profile information and display choices, finds, trips, settings, and featured profile finds are stored as an encrypted CloudKit asset in the owner’s private iCloud database and shared only with people the owner invites through Apple’s CloudKit sharing interface. Invited participants can view and update the shared party according to the permissions the owner grants.</p>
         <p>Comments and reactions attached to shared finds may synchronize through the optional Family Party and can be seen by invited participants. Farfetched Finds does not publish them to a public feed.</p>
-        <p>Road challenges and coarse Family Drive records also synchronize through Family Party. The device’s current-scout selection, onboarding status, preferred location method, and Use parent’s location setting remain local rather than synchronizing with the party.</p>
+        <p>Road challenges and retained legacy drive records also synchronize through Family Party. Incoming party data does not replace this device’s current-scout selection, onboarding status, preferred location method, or saved logging location. Local delivery status records which finds still need a successful party upload.</p>
 
         <h3>Backups and the system share sheet</h3>
-        <p>You can export a backup containing scouts, finds and their comments and reactions, profiles, trips, challenges, and coarse Family Drive records. The backup does not include exact coordinates or the Full Game purchase entitlement. You decide where that file is saved and who can access it. When you share a find, rendered profile, or trip poster, Apple’s system share sheet sends it only to the destination you choose. A find’s coarse location is excluded by default and added only if you turn on the location option before sharing. Profile images and trip posters can contain scout names, selected profile photos, trip details, and achievements; review the item before choosing its destination.</p>
+        <p>You can export a backup containing scouts, finds and their comments and reactions, profiles, trips, challenges, and any retained legacy drive records. The backup does not include exact coordinates or the Full Game purchase entitlement. You decide where that file is saved and who can access it. When you share a find, rendered profile, or trip poster, Apple’s system share sheet sends it only to the destination you choose. A find’s coarse location is excluded by default and added only if you turn on the location option before sharing. Profile images and trip posters can contain scout names, selected profile photos, trip details, and achievements; review the item before choosing its destination.</p>
 
         <h3>Apple services</h3>
         <p>CloudKit, iCloud sharing, background CloudKit notifications, user-visible notifications, the photo picker, location permission, and the share sheet are Apple services governed by Apple’s privacy practices. If you allow notifications, an alert may show a scout name, plate jurisdiction, and score on the Lock Screen or other surfaces controlled by iOS. Notification previews do not include exact location or comment text. No non-Apple analytics, advertising, or social-network SDK is included in the app.</p>
@@ -108,14 +113,15 @@
         <h2 id="retention">Retention, deletion, and choices</h2>
         <ul>
           <li>You can deny or revoke location access at any time in iOS Settings and continue using manual City / Region entry.</li>
-          <li>You can end Family Drive recording in the app. The saved city/region checkpoints remain part of your game data and any copies already shared or exported; there is currently no separate control to delete just one drive’s checkpoints.</li>
+          <li>You can change the saved city/region in Quick Log. Legacy drive records remain in existing game data and copies already shared or exported; there is no separate control to delete one old drive’s checkpoints.</li>
           <li>You can deny or revoke notification permission in iOS Settings. When permission is enabled, the app’s More tab lets you turn rare-find and new-scout alerts on or off.</li>
           <li>You can replace or remove a scout profile photo in the app by choosing an emoji, color, or initial instead.</li>
-          <li>You can edit or delete individual finds. Ending a trip can archive its history for later use.</li>
-          <li>Deleting the app removes its on-device data, subject to device backups managed by you or Apple. Backup files you exported remain wherever you saved them until you delete them there.</li>
+          <li>You can edit or delete individual finds and change the finds featured on a profile. Scores, collections, challenges, highlights, and achievement plates are updated from the remaining game data. Ending a trip can archive its history for later use.</li>
+          <li>Automatic backups retain up to ten recovery copies per installation: three recent versions and up to seven older daily checkpoints. Copies from other installations remain until you remove the cloud data. Earlier copies may contain finds or profiles you later deleted. Turning automatic backups off stops new uploads but keeps existing cloud copies. To remove them, turn backups off and use Apple’s iCloud storage controls for Farfetched Finds; removing all app cloud data can also affect Family Party records.</li>
+          <li>Deleting the app removes its on-device data, subject to device backups managed by you or Apple. Private iCloud recovery copies remain until removed using iCloud controls. Backup files you exported remain wherever you saved them until you delete them there.</li>
           <li>CloudKit party data remains in the owner’s iCloud account until the owner removes the shared data using Apple’s iCloud controls. Removing a participant ends that participant’s access but does not itself erase the owner’s copy.</li>
         </ul>
-        <p>Because Family Party records live in a user’s private or shared iCloud database rather than a customer database operated by the developer, the developer cannot directly retrieve or delete those private records for you. If you need help finding the applicable controls, visit <a href="../support/">Farfetched Finds Support</a>.</p>
+        <p>Because personal backups and Family Party records live in a user’s private or shared iCloud database rather than a customer database operated by the developer, the developer cannot directly retrieve or delete those private records for you. If you need help finding the applicable controls, visit <a href="../support/">Farfetched Finds Support</a>.</p>
       </section>
 
       <section class="content-section" aria-labelledby="family">
