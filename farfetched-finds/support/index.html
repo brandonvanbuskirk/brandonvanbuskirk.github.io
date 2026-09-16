@@ -39,7 +39,7 @@
         <p class="eyebrow">Support</p>
         <h1>Let’s get you back on the hunt.</h1>
         <p class="lede">Start with the quick fixes below. If the issue continues, send a support request with enough detail to reproduce it.</p>
-        <p class="updated">Updated September 11, 2026 · Scoring model 18</p>
+        <p class="updated">Updated September 16, 2026 · Scoring engine 1</p>
         <div class="actions">
           <a class="button primary" href="mailto:farfetchedfindssupport@gmail.com?subject=Farfetched%20Finds%20Support">Email support</a>
           <a class="button secondary" href="../privacy/">Privacy Policy</a>
@@ -54,9 +54,9 @@
         </div>
         <p>Quick Log can reuse the city or region saved on this device, or you can choose a location from the offline catalog. The saved place stays available after restarting the app and during a trip. Check it as you travel: a saved city does not follow the car.</p>
         <ol>
-          <li><strong>Before leaving:</strong> update every participating device and join the same Family Party from Party if you want shared standings.</li>
+          <li><strong>Before leaving:</strong> update every participating device and join the same Family Party from Party to share crew progress.</li>
           <li><strong>While logging:</strong> check the visible location and use <strong>Change</strong> as you travel. If no location is saved, select one before logging. City/region scoring uses an approximate center.</li>
-          <li><strong>Points add immediately:</strong> the credited scout’s totals and the party standings on this device include the find right away. Other devices catch up after synchronization.</li>
+          <li><strong>Points add immediately:</strong> the credited scout’s totals and the shared party total on this device include the find right away. Other devices catch up after synchronization.</li>
           <li><strong>When internet returns:</strong> keep the app open briefly or reopen it. A find waiting for Family Party delivery has already earned its points. Its delivery message clears after a successful upload; reconnecting does not rescore it from your new location or award it twice.</li>
         </ol>
         <p>You can play locally without joining a Family Party. Automatic GPS can supply a location when available; City / Region is the manual option when GPS is unavailable or you prefer to choose a place. Keep the location shown in Quick Log accurate before saving.</p>
@@ -72,9 +72,12 @@
           </details>
           <details>
             <summary>How is a find scored?</summary>
-            <p>Scoring model 18 runs entirely on the device. It weighs distance from the plate’s home boundary, registered-vehicle supply, nearby regional connections, isolation, and border or water travel barriers. Hawaii and other origins that require vehicle shipping use a shared shipping model.</p>
-            <p>Supported plate designs, personalization, eligible rare colors, and unusual vehicle types can add whole-point bonuses based on rarity. Vehicle rarity uses the region where you spot the vehicle, with national estimates when local data is unavailable. Police, fire, and ambulance vehicles include their government-plate status without an extra bonus.</p>
-            <p>A zero-point find still counts toward your collection. An explicitly selected city’s state is treated as the spotting region, including near coastlines and state borders. Existing finds are recalculated for this pre-launch scoring update using their saved distance and coarse region. Simply reconnecting to the internet does not change a score.</p>
+            <p>Scoring engine 1 runs entirely on the device. It weighs distance from the plate’s home boundary, registered-vehicle supply, nearby regional connections, isolation, and border or water travel barriers. Hawaii and other origins that require vehicle shipping use a shared shipping model.</p>
+            <p>Named plate designs, eligible rare colors, and unusual vehicle types can add whole-point bonuses. Attribute rarity uses the plate’s origin, with national proxies where regional data is unavailable. Attributes estimated at 2.5% or more of the origin fleet earn no rarity bonus. Below that, a shared rarity curve adjusts for road exposure and noticeability, with no general upper cap or guaranteed minimum award. These are game estimates, not measured odds of seeing a vehicle. Generic plate categories and unknown designs do not receive a guessed design bonus. Vanity and accessibility add zero points. California-origin logging trucks earn 44 vehicle-type points wherever they are found.</p>
+            <p>Motorized trikes and autocycles earn 60 vehicle-type points, armored vehicles 300, and oversized loads 50. Small enclosed parking-enforcement buggies with three or four wheels earn 14; full-size parking-patrol vehicles use their ordinary categories. These are explicit game awards. Police, fire, ambulance, and parking-buggy awards automatically include the government scoring component without a second bonus. Other vehicles need an identifiable Government / Exempt plate for +2.</p>
+            <p>Pink paint adds 111 points, purple 6, yellow 3, gold or orange 2, and a custom multicolored finish 10. Green, brown, beige, and tan add zero. Color bonuses apply to eligible personal-vehicle categories; commercial, service, armored, and oversized vehicles receive no color bonus. Identified tribal/member plate programs use provisional population-based fleet estimates and count once; state travel points require a supported registration geography. An unidentified tribal plate receives no guessed program or origin bonus.</p>
+            <p>A vehicle with no plate earns 25 points as a special discovery, plus eligible vehicle and color bonuses. No origin or personalized-plate bonus applies. The label describes the missing plate without making a claim about legality.</p>
+            <p>Each find adds its origin, plate-detail, eligible color, and vehicle-type points without a combination multiplier. Collectible achievement plates do not add numerical points. A zero-point find still counts toward your collection. An explicitly selected city’s state is treated as the spotting region, including near coastlines and state borders. Earlier finds may be updated when a scoring revision is applied on opening, restoring, or synchronizing saved data, using their saved distance and coarse region. Simply reconnecting to the internet does not change a score.</p>
           </details>
           <details>
             <summary>Why did my find earn zero points?</summary>
@@ -82,11 +85,15 @@
           </details>
           <details>
             <summary>How do I log an oversized load?</summary>
-            <p>Choose <strong>Oversized load</strong> as the vehicle type. It is a standalone discovery worth 10 points; you do not need to identify the vehicle carrying it. Any eligible plate or color details are scored separately.</p>
+            <p>Choose <strong>Oversized load</strong> as the vehicle type. It is one discovery worth 50 vehicle-type points, including house or mobile-home transports. You do not need to identify the vehicle carrying it. Eligible origin and plate details can still add points, but a second carrier-type award and a color bonus do not apply.</p>
           </details>
           <details>
             <summary>Why does a custom plate stay in Quick Log?</summary>
             <p>Quick Log keeps the most recently earned achievement plate until another event earns a new one, including across trips and app restarts. Tap the plate to see what earned it. Editing or deleting the supporting find can remove that award and reveal an earlier earned plate; if none remain, the display returns to PL8HUNT.</p>
+          </details>
+          <details>
+            <summary>What earns a rare plate-design collectible?</summary>
+            <p>An identified legacy or specialty design can earn <strong>RAREPL8</strong> when its estimated active share in its issuing region is above 0.1% and no more than 1%, or <strong>GRAIL</strong> at 0.1% or less. These are separate tiers, so the same find does not earn both. The selected issuer must match the supported design. Unknown designs and generic plate categories do not qualify. Each collectible is earned once per scout, independently of total find points, and adds no numerical bonus.</p>
           </details>
           <details>
             <summary>How do I change the five plates on a scout’s profile?</summary>
@@ -94,7 +101,7 @@
           </details>
           <details>
             <summary>What appears in the Active Trip highlight?</summary>
-            <p>The highlight follows the latest trip find. If that find completes a collection, changes the lead, or beats the trip’s previous best score, it can feature that achievement. Otherwise it shows Latest Find. The first scored find sets the starting record; tying an existing best does not set a new one.</p>
+            <p>The highlight follows the latest trip find. If that find completes a collection or beats the trip’s previous best score, it can feature that achievement. Otherwise it shows Latest Find. The first scored find sets the starting record; tying an existing best does not set a new one.</p>
           </details>
           <details>
             <summary>What does Full Game unlock, and how do I restore it?</summary>
@@ -103,15 +110,42 @@
           </details>
           <details>
             <summary>How do I create a challenge?</summary>
-            <p>Open Party → <strong>Road Rivalries</strong> → <strong>Create</strong>. Choose a preset or make a custom checklist of 5–10 colors and vehicle types, choose the participating scouts, then review and start it. Only finds logged after the challenge starts count. One find can satisfy several checklist targets, and it still earns its normal points and collection progress.</p>
+            <p>Open Party → <strong>Crew Challenges</strong> → <strong>Create</strong>. Choose at least two scouts, select a preset or a custom checklist of 5–10 colors and vehicle types, then review and start it. The creator starts the challenge for the selected crew immediately; no separate challenge invitation is needed. The goal and participants are fixed once started.</p>
+            <p><strong>Crew Rally</strong> has a shared goal of five finds per selected scout: three scouts means 15 finds altogether. Any scout can contribute any number; there is no individual quota. <strong>Color hunt</strong> covers all 13 named colors, <strong>Common vehicle hunt</strong> covers nine vehicle types, and custom challenges use your selected targets.</p>
+            <p>Everyone works toward one shared goal, with no timer or winner. Only new finds by the selected scouts count. A checklist find contributes when it checks an outstanding target; one find can check both its color and vehicle type. All finds still earn their normal points and collection progress, even if they do not advance the challenge.</p>
+            <p>A challenge started during a trip belongs to that trip and stops when the trip ends; continuing that trip resumes an unfinished challenge. A challenge started outside a trip continues across trips. The creator can end an active challenge early. Use <strong>Start again</strong> on a completed or ended challenge to review a new one with progress starting at zero. Edits, deletions, and late offline synchronization can change the shared result.</p>
           </details>
           <details>
             <summary>My Family Party is not syncing</summary>
             <p>Confirm that each participant is signed in to iCloud, has iCloud Drive available, and is using the Family Party invitation sent by the owner. Keep the app open briefly after reconnecting. Offline changes are saved and retried when service returns.</p>
           </details>
           <details>
+            <summary>How do scouts play together?</summary>
+            <p>Each distinct physical vehicle should be logged once per trip and credited to one scout. That scout keeps the find in their personal collection, and its points add once to the party total. Party shows each scout’s contributions alphabetically with equal prominence, alongside shared collection progress and Crew Challenges.</p>
+            <p>Play together on one device, or use an optional private Family Party to synchronize devices. A Family Party invitation connects devices; selecting scouts for a Crew Challenge sets who can contribute to that goal.</p>
+          </details>
+          <details>
+            <summary>What are the shared point milestones?</summary>
+            <p>The crew earns collectible plates at 100, 1,000, and 5,000 all-time party points when at least two scouts have contributed positive, confirmed points. Every contributing scout earns a copy; a later contributor becomes eligible after their first positive contribution. These plates celebrate progress and add no extra points. Editing, deleting, or reassigning finds can change eligibility.</p>
+          </details>
+          <details>
+            <summary>What does Scoring engine 1 mean?</summary>
+            <p>Scoring engine 1 is the first public scoring release. Its number is separate from the app version shown in the App Store. Rules and a find’s score breakdown show the customer scoring version; development revisions do not count as customer releases.</p>
+          </details>
+          <details>
+            <summary>What happens to older pre-release party progress?</summary>
+            <p>The app removes retired competitive challenges and recalculates awards from supported finds and cooperative challenges when data is opened, restored, or synchronized. A legacy find credited to several scouts keeps one owner: the first credited scout alphabetically by name. The find remains saved and belongs to that scout’s personal collection. Its points count once toward the party total. Update every participating device to use the same rules.</p>
+          </details>
+          <details>
+            <summary>How do I react to a find?</summary>
+            <p>In Updates, choose thumbs up, mind blown, laugh, love, angry, or applause below a find. Each scout has one reaction per find. Choose another to replace yours, or tap your selected reaction again to remove it. <strong>Who reacted</strong> shows the scouts and their choices.</p>
+            <p>Finds no longer have typed or preset comments. Pre-release test comments are removed when the updated app loads, restores, or synchronizes game data. Everyone in the party should update. For a conversation, choose <strong>Share find</strong> and select your messaging app.</p>
+          </details>
+          <details>
             <summary>How do I enable or change notifications?</summary>
-            <p>Open the More tab and find Notifications. Allow notifications when asked, then choose whether another scout’s rare finds of 20 points or more and newly added scouts should alert you. Comments by another scout are always eligible for an alert. If permission was denied, use Open iOS Settings to change it. Your own activity does not create an alert on the same party.</p>
+            <p>Open More → Notifications. Choose alerts for other scouts’ finds worth <strong>20+ points</strong> (the default), <strong>60+ points</strong>, <strong>100+ points</strong>, or <strong>Off</strong>. This is the find’s score, not its reaction count. New-scout alerts have a separate switch.</p>
+            <p><strong>Reaction summaries</strong> has its own switch and is on by default. About three hours after the first new reaction arrives on your device, one notification summarizes reactions to your finds. Later reactions update that summary without restarting the timer. Your own reactions are excluded; withdrawn reactions and reactions you view in <strong>Who reacted</strong> are removed from the pending summary once the app receives those changes. Tap a summary to open the corresponding finds.</p>
+            <p>Allow notifications when prompted. If permission is denied, use <strong>Open iOS Settings</strong>. CloudKit syncing, connectivity, Focus, and other iOS settings affect delivery and timing; updates may not arrive while the app is closed.</p>
           </details>
           <details>
             <summary>A scout or find is missing on another device</summary>
@@ -144,7 +178,7 @@
           <li>A screenshot if it explains the issue and contains no private information.</li>
         </ul>
         <div class="callout warning">
-          <strong>Protect your family’s privacy.</strong> Do not attach backup files or include scout names, profile photos, exact locations, iCloud invitation links, or other personal information unless it is necessary to resolve the issue.
+          <strong>Protect your family’s privacy.</strong> Do not attach backup files or include scout names, exact locations, iCloud invitation links, or other personal information unless it is necessary to resolve the issue.
         </div>
       </section>
 
