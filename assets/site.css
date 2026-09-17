@@ -98,6 +98,15 @@ button:focus-visible {
   width: 3.25rem;
 }
 
+.brand-icon {
+  border-radius: 20%;
+  display: block;
+  flex: 0 0 auto;
+  height: 2.75rem;
+  object-fit: contain;
+  width: 2.75rem;
+}
+
 .site-nav {
   align-items: center;
   display: flex;
